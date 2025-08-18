@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  auth_image:
+    image: auth_image
+    build: https://github.com/sandeep-developer25/auth_proj.git
+    ports:
+      - 5000:5000
+    volumes: 
+      - .:/flaskapp
